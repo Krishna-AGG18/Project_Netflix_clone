@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    background-image: url(pics/bg.jpg);
+    height: 100vh;
+    position: relative;
+    /* it will keep the image horizontal and vertical centralised */
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* If the viewport width is less than 1200px, the value will be 1200px.
+    If the viewport width is greater than 1200px, the value will be 100vw (the width of the viewport). 
+    if you don’t want an element to become too small on smaller screens but still want it to adapt to larger screens. */
+    background-size: max(1200px,100vw);
+}
+nav{
+    max-width: 77vw;
+    margin: auto;
+    justify-content: space-between;
+    padding: 25px;
+    flex-wrap: wrap;
+    display: flex;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+#buttonS{
+    width: 20%;
+    gap: 10px;
+    display: flex;
+    position: relative;
+}
+.Eng{
+    width: 50%;
+    position: relative;
+    display: inline-block;
+}
+.eng-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-bottom:2px solid white;
+    border-left:2px solid white;
+    border-right:2px solid white;
+    opacity: .6;
+    top:45px;
+    line-height: 24px;
+    padding-top: 10px;
+    width: 88%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.eng-content ul li{
+    list-style: none;
+}
+#english{
+    background-color: black;
+    opacity: .6;
+    width: 100%;
+    border-bottom: none;
+    height: 100%;
+    font-size: 16px;
+    padding: 0;
+    border-radius: 8px;
+    border: 2px solid white;
+    color: white;
+}
+.Eng:hover .eng-content{
+    display: block;
+}
+#signin{
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    width: 40%;
+    height: 90%;
+    padding: 0px;
+    border: none;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 16px;
+}
+.main .box{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    background-color: black;
+}
+.text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding-top: 50px;
+    gap: 23px;
+}
+.text> :first-child, .text> :nth-child(2){
+    font-family: 'Segoe UI';
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: bolder;
+}
+.text> :nth-child(3){
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 600;
+}
+.text> :nth-child(4){
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.Search{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+#inputbox{
+    width: 70%;
+}
+.Search input{
+    width: 100%;
+    font-size: 16px;
+    background-color: black;
+    padding: 20px;  
+    opacity: .8;
+}
+.Search button{
+    background-color: rgb(193, 17, 25);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 15px;
+}
